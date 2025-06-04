@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRE SAINT DOMINIQUE</title>
+    <link rel="stylesheet" href="acceuil.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-div">
+            <div class="logo">
+                <img src="images/dom.png" alt="logo du centre">
+                <p>CENTRE SAI<span>NT DOMINIQUE</span></p>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        </div>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html">À PROPOS DE NOUS</a></li>
+            <li><a href="atelier.html">NOS ATELIERS</a></li>
+            <li><a href="equipe.html">NOTRE EQUIPE</a></li>
+            <li><a href="activite.html">NOS ACTIVITES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <h1 class="typing-dynamic" id="typingTitle"></h1>
+    <!-- SECTION DIAPORAMA -->
+    <section class="diaporama-section">
+        <div class="slideshow-container">
+            <div class="slide fade"><img src="/images/img8.jpg" alt="Image 1"></div>
+            <div class="slide fade"><img src="images/img2.jpg" alt="Image 2"></div>
+            <div class="slide fade"><img src="images/img3.jpg" alt="Image 3"></div>
+            <div class="slide fade"><img src="images/img4.jpg" alt="Image 4"></div>
+            <div class="slide fade"><img src="images/img5.jpg" alt="Image 5"></div>
+            <div class="slide fade"><img src="images/img6.jpg" alt="Image 6"></div>
+            <div class="slide fade"><img src="images/img7.jpg" alt="Image 7"></div>
+            <div class="slide fade"><img src="images/img1.jpg" alt="Image 8"></div>
+            <div class="slide fade"><img src="images/img9.jpg" alt="Image 9"></div>
+
+            <!-- Flèches -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2><i class="fas fa-child"></i>✨ À propos de nous</h2>
+            <p class="intro"> Le Centre Saint Dominique <strong> 🌿 Une vocation, une mission, une passion : les enfants</strong> Le Centre Saint Dominique est bien plus qu’un centre de loisir. C’est une communauté vivante, un lieu de rencontre, d’éducation et de transformation.
+                Fondé sous l’impulsion des Dominicaines Missionnaires de la Sainte Famille, et porté par le zèle missionnaire des Sœurs Dominicaines, il s’appuie sur l’enthousiasme et l’énergie de jeunes volontaires passionnés pour bâtir un environnement
+                chaleureux, sûr et épanouissant pour les enfants. <br> Chaque samedi après-midi, dès 14h00, l’école maternelle bilingue Notre-Dame du Rosaire à Etetack, ouvre ses portes à des centaines d’enfants âgés de 5 à 17 ans, pour une aventure humaine,éducative
+                et spirituelle exceptionnelle
+            </p>
+            <div class="about-card">
+                <h3><i class="fas fa-eye"></i>🌟 Notre vision</h3>
+                <p class="rie">
+                    Nous croyons profondément que chaque enfant porte en lui une lumière, un talent, une sensibilité unique. Notre mission est d’aider ces jeunes à se découvrir, se construire, et s’épanouir pleinement dans un cadre bienveillant, structuré et inspiré par
+                    l’Évangile. Chez nous, les enfants ne sont pas de simples participants : ils sont le cœur battant du projet. Nous les accueillons avec joie, nous les écoutons avec attention, et nous les accompagnons avec engagement.
+                </p>
+            </div>
+            <div class="about-card">
+                <h3><i class="fas fa-bullseye"></i>🎯 Notre mission : éduquer, éveiller, inspirer</h3>
+                <p class="rie">Le Centre Saint Dominique s’engage à :</p>
+                <ul class="rie">
+                    <li>Offrir un espace sécurisé et enrichissant, propice au développement des capacités intellectuelles, manuelles, morales et spirituelles de l’enfant.</li>
+                    <li>Encourager la créativité et l’expression de soi, grâce à des activités stimulantes, ludiques et pédagogiques.</li>
+                    <li>Cultiver le sens de la responsabilité, du respect et du vivre-ensemble, dans un esprit de fraternité et de solidarité.</li>
+                    <li>Transmettre des valeurs chrétiennes solides, en collaboration avec les Sœurs Dominicaines, à travers la prière, le témoignage, les célébrations et les partages de vie.</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3><i class="fas fas-paint-brush"></i>🧒 Nos ateliers : des espaces de découverte et de croissance</h3>
+                <p class="rie">Afin de répondre aux besoins et aux intérêts variés des enfants, nous avons structuré nos activités en cinq ateliers spécialisés, chacun étant encadré par des volontaires formés et bienveillants :</p>
+                <ul class="rie">
+                    <li>⚽ Atelier sport : pour développer l’endurance, la discipline et l’esprit d’équipe à travers des jeux, tournois et défis sportifs.</li>
+                    <li>🎨 Atelier travail manuel : pour éveiller la créativité avec des activités de peinture, bricolage, recyclage artistique et constructions originales.</li>
+                    <li>💃 Atelier danse : pour libérer l’expression corporelle, renforcer la confiance en soi, et célébrer la culture à travers le mouvement et le rythme.</li>
+                    <li>🧵 Atelier brotricout : pour apprendre l’art du tricot, de la couture et du tissage, dans une atmosphère d’apprentissage et de patience.</li>
+                    <li>🧸 Atelier tout-petits : spécialement conçu pour les plus jeunes, avec des jeux éducatifs, des activités d’éveil sensoriel et des contes animés.</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3><i class="fa fa-users"></i>🌍 Des activités collectives pour renforcer les liens</h3>
+                <p class="rie">Au-delà des ateliers hebdomadaires, notre calendrier est ponctué de grandes activités collectives, qui favorisent la cohésion, la découverte et la joie partagée :</p>
+                <ul class="rie">
+                    <li>🌲 Excursions éducatives vers des lieux culturels, naturels ou historiques.</li>
+                    <li>🎉 Journées récréatives et sportives, avec des compétitions amicales, des jeux d’équipe et des défis collectifs.</li>
+                    <li>🍲 Ateliers culinaires où les enfants cuisinent ensemble et découvrent les saveurs de leur patrimoine.</li>
+                    <li>✝️ Chemins de croix vivants et temps de prière, pour nourrir la foi et former les cœurs à l’amour du Christ.</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3><i class="fas fa-praying-hands"></i>✝️ Une pédagogie enracinée dans la foi</h3>
+                <p class="rie">
+                    Inspiré par l’esprit de Saint Dominique, notre centre ne sépare jamais éducation et spiritualité. Les enfants grandissent ici dans un climat de prière, de joie et de foi. Les Sœurs Dominicaines sont au cœur de cette mission, apportant leur sagesse, leur
+                    écoute et leur rayonnement spirituel. <br> Nous croyons que la foi est un moteur puissant d’amour, de transformation intérieure et d’espérance. Par elle, nous voulons semer dans les cœurs d’enfants la paix, la confiance
+                    et le goût de Dieu.
+                </p>
+            </div>
+            <div class="about-card">
+                <h3><i class="fas fa-hand-holding-heart"></i>🕊️ Une communauté de don et de service</h3>
+                <p class="rie">
+                    Le Centre Saint Dominique repose sur l’engagement bénévole de jeunes volontaires passionnés, animés par le désir profond de servir. Ils donnent de leur temps, de leur énergie, de leurs compétences, mais aussi de leur cœur. Chaque sourire d’enfant, chaque
+                    progrès, chaque moment de joie est pour nous une récompense inestimable.
+                </p>
+            </div>
+            <p class="conclusion">
+                📢 Rejoignez-nous !📢 <br> Vous êtes parent, volontaire, éducateur ou simplement passionné par l’enfance et la foi ? Rejoignez-nous dans cette belle aventure humaine et spirituelle ! Ensemble, nous pouvons construire une génération d’enfants
+                heureux, solides, croyants et responsables.
+            </p>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+        const title = "BIENVENUE AU CENTRE SAINT DOMINIQUE !";
+        const container = document.getElementById("typingTitle");
+        [...title].forEach((char, index) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.classList.add("letter");
+            container.appendChild(span);
+            setTimeout(() => {
+                span.classList.add("visible");
+            }, index * 100);
+        });
+    </script>
+    <script src="acceuil.js"></script>
+    <footer>
+        <p>&copy; 2025 CENTRE SAINT DOMINIQUE tout les droits reservés <br>Merci de visiter notre site. Notre bonheur c'est donner du sourire aux enfants</p>
+    </footer>
+</body>
+
+</html>
