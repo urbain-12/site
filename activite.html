@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Saint Dominique</title>
+    <link rel="stylesheet" href="activite.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-div">
+            <div class="logo">
+                <img src="images/dom.png" alt="logo du centre">
+                <p>CENTRE SAI<span>NT DOMINIQUE</span></p>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        </div>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html">À PROPOS DE NOUS</a></li>
+            <li><a href="atelier.html">NOS ATELIERS</a></li>
+            <li><a href="equipe.html">NOTRE EQUIPE</a></li>
+            <li><a href="activite.html">NOS ACTIVITES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <h1 class="typing-dynamic" id="typingTitle"></h1>
+    <section class="activities">
+        <!-- SPORT -->
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img11.jpg" class="active">
+                <img src="images/img2.jpg">
+                <img src="images/img6.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>LES EXCURSIONS 🌍 </h3>
+            <p>À la découverte du monde qui nous entoure, Les excursions organisées par le Centre Saint Dominique d’Abobo ne sont pas de simples promenades : elles sont conçues comme de véritables aventures éducatives, ayant pour but de faire découvrir aux
+                enfants la richesse de leur pays, tout en stimulant leur curiosité intellectuelle et leur sens de l'observation. <br> À travers des sorties soigneusement planifiées, les enfants ont visité des lieux emblématiques tels que le Complexe Sportif
+                d’Olembe, véritable fierté nationale, où ils ont pu découvrir les coulisses d’une infrastructure sportive de haut niveau. Au Centre touristique de Nkolandom, ils se sont immergés dans les traditions et le patrimoine culturel du Cameroun,
+                en touchant du doigt les réalités rurales, artistiques et spirituelles. Lors de notre escapade à l’Éco-Park, ils ont appris à reconnaître différentes espèces végétales et animales tout en abordant les notions de protection de l’environnement.
+                Enfin, les moments passés à la plage de Kribi, au bord de l'océan Atlantique, ont permis aux enfants de comprendre l’écosystème marin, de profiter d’un espace de détente et de renforcer la cohésion du groupe.</p>
+        </div>
+
+        <!-- DANSE -->
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img1.jpg" class="active">
+                <img src="images/img13.jpg">
+                <img src="images/img12.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>ACTIVITÉS COLLECTIVES 🤝</h3>
+            <p>construire l’esprit de famille et de solidarité, La vie en communauté est une école précieuse pour apprendre à être, à vivre ensemble et à bâtir des relations saines et durables. Les activités collectives que nous proposons au sein du centre
+                ont pour mission de favoriser chez chaque enfant le sens de l’autre, le respect des différences, la tolérance, mais aussi la joie du partage. <br>À travers des jeux de groupe, des tournois, des ateliers coopératifs, des grands jeux d’animation,
+                des danses collectives, des ateliers d’art ou encore des activités de théâtre, les enfants sont amenés à s’exprimer librement, à écouter, à coopérer et à prendre conscience de leur rôle dans un groupe. Ces activités leur permettent aussi
+                de briser les barrières sociales, de rencontrer des enfants d’âges et d’origines variés, et de s’ouvrir aux autres dans un climat de bienveillance et de fraternité.</p>
+        </div>
+
+        <!-- TRAVAUX MANUELS -->
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img14.jpg" class="active">
+                <img src="images/img15.jpg">
+                <img src="images/img16.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>LES JOURNÉES SPORTIVES 🏃‍♂️</h3>
+            <p>Éduquer le corps et l’esprit, Le sport est un outil pédagogique puissant que nous utilisons pour éveiller l’énergie, la discipline, la rigueur et le respect chez nos jeunes. Nos activités sportives régulières visent non seulement à améliorer
+                la forme physique des enfants, mais aussi à cultiver des valeurs fortes comme l’esprit d’équipe, la persévérance et le dépassement de soi. <br>Que ce soit à travers le football, la course de relais, les sauts en longueur, la corde à sauter,
+                les jeux de stratégie ou les compétitions amicales, chaque séance est pensée pour offrir aux enfants un cadre stimulant, joyeux et sécurisant. En bougeant, ils découvrent leurs forces, apprennent à gérer leurs émotions face à l’échec ou
+                à la victoire, et prennent confiance en leurs capacités. <br>Au-delà du mouvement, le sport devient pour eux un espace de socialisation, de développement moral et mental, et de gestion du stress. Il favorise également l’adoption de bonnes
+                habitudes de santé, de posture, de sommeil et d’alimentation. Le sport, chez nous, est une école de vie.
+            </p>
+        </div>
+
+        <!-- BROTRICOUT -->
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img17.jpg" class="active">
+                <img src="images/img18.jpg">
+                <img src="images/img19.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>LE CHEMIN DE CROIX VIVANT ✝️</h3>
+            <p>Spiritualité et intériorité incarnées, L’animation du chemin de croix vivant, pendant la période du Carême, est l’un des moments les plus marquants de notre programme annuel. Il s’agit d’une mise en scène très émotive et priante des dernières
+                heures de la vie du Christ, interprétée par les enfants eux-mêmes. <br>Cette activité permet aux jeunes de s’approprier les textes bibliques, de comprendre en profondeur le message d’amour, de sacrifice et de rédemption que Jésus nous
+                a laissé, et d’y répondre avec foi et ferveur. En jouant les rôles des différentes stations (Jésus, Marie, Simon de Cyrène, les soldats…), les enfants vivent une expérience spirituelle forte, qui les rapproche de Dieu tout en développant
+                leur sens de la compassion. <br>Le chemin de croix devient ainsi un véritable outil de catéchèse vivante, mais aussi une expérience théâtrale et émotionnelle, où se mêlent prière, silence, gestuelle et contemplation. C’est aussi un moment
+                de communion intergénérationnelle, où parents, moniteurs et enfants se rassemblent dans la foi.</p>
+        </div>
+
+        <!-- TOUT PETITS -->
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img22.jpg" class="active">
+                <img src="images/img21.jpg">
+                <img src="images/img20.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>ACTIVITES CULINAIRES 🍲</h3>
+            <p>saveurs, traditions et apprentissages, L’art culinaire est une véritable richesse culturelle. À travers nos ateliers de cuisine, les enfants découvrent les mets typiques de notre terroir, apprennent à reconnaître les ingrédients locaux, à
+                manipuler les ustensiles de cuisine en toute sécurité et à respecter les règles d’hygiène alimentaire. <br>Chaque session est l’occasion de mettre la main à la pâte pour préparer des plats comme le ndolé, le koki, le couscous de manioc,
+                la sauce jaune, ou encore des douceurs comme les beignets ou les gâteaux de maïs. Les enfants apprennent non seulement à cuisiner, mais aussi à collaborer en cuisine, à se répartir les rôles, à écouter les consignes, et à faire preuve
+                de patience. <br>Ces moments de cuisine sont aussi des espaces d’expression culturelle, où les enfants découvrent les histoires, les symboles et les coutumes attachés à chaque recette. On y transmet la mémoire de nos aînés, l’identité
+                de nos peuples, et le goût de faire plaisir aux autres. Ils repartent fiers, heureux, et parfois même avec de belles vocations !</p>
+        </div>
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img24.jpg" class="active">
+                <img src="images/img23.jpg">
+                <img src="images/img25.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>CAUSERIES EDUCATIVES 🧠</h3>
+            <p>Former des citoyens responsables et éclairés, La mission du centre ne s’arrête pas au jeu et au loisir. Elle inclut également une dimension éducative profonde, à travers des causeries thématiques, organisées régulièrement pour aborder des
+                sujets essentiels à la formation humaine, morale et sociale des enfants. <br>Encadrées par des moniteurs formés, des enseignants ou des invités spécialisés, ces causeries abordent des thèmes comme : le respect des règles, l’estime de soi,
+                l’importance du pardon, la gestion des conflits, l’hygiène corporelle, l’utilisation des réseaux sociaux, la sécurité routière, ou encore l’éducation civique. <br>Chaque rencontre est interactive, adaptée à l’âge des enfants, et ponctuée
+                de jeux, de mises en situation, de chants ou d’activités artistiques. Les enfants sont invités à poser des questions, à exprimer leurs opinions et à grandir dans la conscience de leurs droits et devoirs. Ces causeries sont des moments
+                clés pour forger des leaders de demain, responsables, engagés et profondément humains.</p>
+        </div>
+        <div class="activity-card">
+            <div class="carousel">
+                <img src="images/img26.jpg" class="active">
+                <img src="images/img27.jpg">
+                <img src="images/img28.jpg">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <h3>LES COLONIES 🍲🧠✝️🏃‍♂️🌍</h3>
+            <p> Rassemblant toutes les activites ci haut, Les excursions organisées par le Centre Saint Dominique d’Abobo ne sont pas de simples promenades : elles sont conçues comme de véritables aventures éducatives, ayant pour but de faire découvrir aux
+                enfants la richesse de leur pays, tout en stimulant leur curiosité intellectuelle et leur sens de l'observation. <br>La vie en communauté est une école précieuse pour apprendre à être, à vivre ensemble et à bâtir des relations saines et
+                durables. Les activités collectives que nous proposons au sein du centre ont pour mission de favoriser chez chaque enfant le sens de l’autre, le respect des différences, la tolérance, mais aussi la joie du partage. <br>La mission du centre
+                ne s’arrête pas au jeu et au loisir. Elle inclut également une dimension éducative profonde, à travers des causeries thématiques, organisées régulièrement pour aborder des sujets essentiels à la formation humaine, morale et sociale des
+                enfants.
+            </p>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+        const title = "NOS MAGNIFIQUES ACTIVITES !";
+        const container = document.getElementById("typingTitle");
+        [...title].forEach((char, index) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.classList.add("letter");
+            container.appendChild(span);
+            setTimeout(() => {
+                span.classList.add("visible");
+            }, index * 100);
+        });
+    </script>
+    <script src="activite.js"></script>
+    <footer>
+        <p>&copy; 2025 CENTRE SAINT DOMINIQUE tout les droits reservés <br>Merci de visiter notre site. Notre bonheur c'est donner du sourire aux enfants</p>
+    </footer>
+</body>
+
+</html>
