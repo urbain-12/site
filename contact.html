@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Saint Dominique</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-div">
+            <div class="logo">
+                <img src="images/dom.png" alt="logo du centre">
+                <p>CENTRE SAI<span>NT DOMINIQUE</span></p>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        </div>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html">À PROPOS DE NOUS</a></li>
+            <li><a href="atelier.html">NOS ATELIERS</a></li>
+            <li><a href="equipe.html">NOTRE EQUIPE</a></li>
+            <li><a href="activite.html">NOS ACTIVITES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <h1 class="typing-dynamic" id="typingTitle"></h1>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <div class="info-block">
+                    <h3><i class="fas fa-phone"></i> Téléphones</h3>
+                    <p> <strong>+237 696 246 332<br>+237 683 910 657<br>+237 655 833 064 <br>+237 693 090 794</strong></p>
+                </div>
+
+                <div class="info-block">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>
+                        <a href="mailto:urbainnyendendjana@gmail.com"></strong>urbainnyendendjana@gmail.com</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3><i class="fab fa-facebook"></i> Facebook</h3>
+                    <p>
+                        <a href="https://www.facebook.com/CENTRE-SAINT-DOMINIQUE-DABOBO" target="_blank">
+                            </strong>CENTRE SAINT DOMINIQUE D'ABOBO</strong>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3><i class="fas fa-paper-plane"></i> Laissez-nous un message</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="nom" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="localisation">
+        <div class="container">
+            <h3><i class="fas fa-map-marker-alt"></i> Notre localisation</h3>
+            <p>Abobo Etetack, chez les Sœurs Dominicaines</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=Abobo+Etetack,+Yaoundé,+Cameroun&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+        const title = "CONTACTEZ NOUS MAINTENANT !"
+        const container = document.getElementById("typingTitle");
+        [...title].forEach((char, index) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.classList.add("letter");
+            container.appendChild(span);
+            setTimeout(() => {
+                span.classList.add("visible");
+            }, index * 100);
+        });
+    </script>
+    <footer>
+        <p>&copy; 2025 CENTRE SAINT DOMINIQUE tout les droits reservés <br>Merci de visiter notre site. Notre bonheur c'est donner du sourire aux enfants</p>
+    </footer>
+</body>
+
+</html>
