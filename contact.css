@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    background-color: gray;
+    padding: 10px 20px;
+}
+
+header {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    position: relative;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    gap: 195px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.logo img {
+    height: 130px;
+    width: auto;
+}
+
+.logo p {
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+
+.menu-button {
+    display: none;
+    background-color: white;
+    color: blueviolet;
+    border: 3px solid blueviolet;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    gap: 20px;
+    width: 80%;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover {
+    background-color: white;
+    color: black;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: gray;
+        margin: 5px;
+        padding: 5px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 5px 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .typing-dynamic {
+        font-size: 0.4em;
+    }
+}
+
+ul li {
+    padding: 10px 20px;
+}
+
+@media (max-width: 375px) {
+    .logo-div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu-button {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+    .nav-links {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .logo img {
+        height: 90px;
+    }
+    .logo p {
+        font-size: 1.1em;
+    }
+    .typing-dynamic {
+        font-size: 0.2em;
+    }
+}
+
+.typing-dynamic {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0047ab;
+    min-height: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.letter {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    white-space: pre;
+}
+
+.letter.visible {
+    opacity: 1;
+}
+
+footer {
+    background-color: gray;
+    color: black;
+    padding: 1.5em;
+    text-align: center;
+    clear: both;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4b2e83;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.info-block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.info-block:hover i {
+    transform: scale(1.2);
+    color: #4b2e83;
+}
+
+.info-block h3 i {
+    margin-right: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3b246b;
+}
+
+.localisation {
+    background-color: #e9e6f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.localisation h3 i {
+    margin-right: 10px;
+}
+
+.map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
